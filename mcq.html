@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Quiz-Game</title>
+</head>
+<body>
+<div class="top">
+    <center>
+        <h1 class="top">-----MCQ-Quiz-Game-----</h1>
+    </center>
+
+</div>
+<div class="centerdiv">
+    <h1 class="questiondisplay">{{currentquestion}}</h1>
+</div>
+<form>
+
+    <input type="hidden" name="question" value="{{qno}}">
+    <input type="hidden" name="option" value="{{option}}">
+    <input type="hidden" name="score" value="{{score}}">
+
+<!--    <input type="button" name="opy">-->
+    <input type="radio" name="option" value="a">{{c}}<br>
+    <input type="radio" name="option" value="b">{{b}}<br>
+    <input type="radio" name="option" value="c">{{c}}<br>
+    <input type="radio" name="option" value="d">{{d}}<br><br>
+    <input type="submit" name="submit" value="save"><br>
+</form>
+<div class="results"><br>
+    {{result}}
+
+</div>
+</body>
+</html>
